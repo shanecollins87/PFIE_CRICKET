@@ -2,45 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectmoveY : MonoBehaviour
+// Add thsi script to your pressure plate
+// Then assign the door variable - seen because of Serializefield
+
+public class DoorTrigger : MonoBehaviour
 {
+    [SerializeField]
+    GameObject door;
 
-    public float speed = 0.1f;
-    public float minX = -5;
-    public float maxX = 5;
+    bool isOpened = false;
 
-
-    //Public Vector3
-    Vector3 vector;
-
-
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider col)
     {
-        vector = new Vector3(0, 1, 0);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // we want the cube to move up and down between x = -5 and x = 5
-        transform.position += speed * vector;
-
-        //if we reach x = 5 and were moving up, then we now need to reverse dirction
-        if (transform.position.x >= maxX && speed > 0)
+        if (!Opened)
         {
-            speed *= -1;
+            isOpened = true;
+        door.transform.position += new Vector3(0, 4, 0);
         }
-
-
-
-        //if we reach x = 5 and were moving up, then we now need to reverse dirction
-        if (transform.position.x <= minX && speed < 0)
-        {
-            speed *= -1;
-        }
-
-
 
     }
 }
