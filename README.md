@@ -1,3 +1,4 @@
 # 2021---HDIP--PFIE---CA1---CRICKET
 
-This is my initial commit
+Started looking at Brackeys making an rpg in unity there is 11 videos
+
