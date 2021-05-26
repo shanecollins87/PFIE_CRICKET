@@ -19,9 +19,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
 
 
-    void Update()
+    void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F1))
         {
             if (isPaused)
             {

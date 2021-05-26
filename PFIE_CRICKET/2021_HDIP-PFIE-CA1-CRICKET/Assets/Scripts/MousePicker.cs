@@ -25,11 +25,11 @@ public class MousePicker : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && Physics.Raycast(ray, out hit))
         {
 
-#if UNITY_EDITOR
-            Debug.Log(ray);
-#endif
-            Transform objectHit = hit.transform;
-            objectHit.gameObject.GetComponent<Renderer>().material.color = Color.clear;
+//#if UNITY_EDITOR
+//            Debug.Log(ray);
+//#endif
+//            Transform objectHit = hit.transform;
+//            objectHit.gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
     }
 }

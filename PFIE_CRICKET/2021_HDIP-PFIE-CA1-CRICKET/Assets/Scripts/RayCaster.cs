@@ -26,7 +26,7 @@ public class RayCaster : MonoBehaviour
     {
         //iniation distance of ray cast
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 20;
 
         Debug.DrawRay(transform.position, forward, Color.red);
 

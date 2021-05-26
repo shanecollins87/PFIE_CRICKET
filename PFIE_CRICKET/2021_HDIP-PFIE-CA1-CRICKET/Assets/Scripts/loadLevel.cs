@@ -9,6 +9,14 @@ public class loadLevel : MonoBehaviour
     public int iLevelToLoad;
     public string sLevelToLoad;
 
+
+    public interface IUnit   //saving position of player in game
+    {
+        Vector3 GetPosition();
+        void SetPosition(Vector3 position);
+
+    }
+
     public bool useIntegerToLoadLevel = false;
     // Start is called before the first frame update
     void Start()

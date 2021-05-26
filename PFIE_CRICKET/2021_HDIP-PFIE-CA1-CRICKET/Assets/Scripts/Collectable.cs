@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
 
-8.Collectible game Objects
+
 
 
 
@@ -17,25 +17,32 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
+
+    [SerializeField]
+
+    public string itemName;
+    public string itemDescription;
+    public Sprite itemIcon;
+    public float attackStrenght;
     public string itemType;
-    //coin playing sound
-    public AudioSource coinSound;
+    public AudioSource coinSound; //playsound
 
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
+        
     {
-        if (other.tag == "Player")
+        if (collider.tag == "Player")
         {
             // have it also add points
             // add power up etc. before being destroyed
             string itemType = GetComponent<Collider>().gameObject.GetComponent<Collectable>().itemType;
             
-            print ("You have collected a:" + itemType);
+            print ("You have eaten a:" + itemType);
 
 
             // Play sound
-            coinSound.Play();
+            //coinSound.Play();
             // itemType.Add(itemType);
             Destroy(this.gameObject);
 
@@ -46,3 +53,13 @@ public class Collectable : MonoBehaviour
 
 
 }
+
+
+
+
+
+
+
+
+
+   
