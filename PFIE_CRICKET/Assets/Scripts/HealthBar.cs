@@ -48,7 +48,7 @@ public class HealthBar : MonoBehaviour
         float currentOffset = current - minimum;
         float maximumOffset = maximum - minimum;
         float fillAmount = currentOffset / maximumOffset;
-       // mask.fillAmount = fillAmount;
+        mask.fillAmount = fillAmount;
 
         //fill.color = color; // set fill colour to bar colour
     }

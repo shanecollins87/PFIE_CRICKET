@@ -7,6 +7,7 @@ public class InventorySlot : MonoBehaviour
 {
 
     public Image icon;
+    public Button removeButton;
     Item item;
 
     public void AddItem(Item newItem)
@@ -26,7 +27,27 @@ public class InventorySlot : MonoBehaviour
 
         icon.sprite = null; // sets the sprite Image to null
         icon.enabled = false; // turn off in the scene
+        removeButton.interactable = false;
 
     }
+
+    public void onRemoveButton()
+    {
+        Inventory.instance.Remove(item);
+    
+    }
+
+    public void UseItem()
+    {
+        if (item != null)
+        {
+            item.Use();
+        
+        }
+    
+    
+    
+    }
+
 }
 

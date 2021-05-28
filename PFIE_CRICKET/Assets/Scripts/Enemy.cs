@@ -1,19 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public int health;
+    public int Enemyhealth;
     public Slider healthbar;
-    public float Health = 20f;
+    
+    public int Health = 20;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-
             Takedamage();
         }
 
@@ -21,14 +20,15 @@ public class Enemy : MonoBehaviour
 
     public void Takedamage()
     {
-        health -= 5;
+        Enemyhealth -= 10;
     }
 
-    private void Update()
+    private void Update ()
         
     {
-        healthbar.value = health;
-        Debug.Log(health);
+        
+        //healthbar.value = health;
+        Debug.Log(Enemyhealth);
     
     }
 

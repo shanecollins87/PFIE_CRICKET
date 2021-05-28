@@ -10,7 +10,7 @@ public class HealthBar_Enemy : MonoBehaviour
     private float maxHealth = 20;
     Enemy Player;
 
-   // public event Action<float> OnHealthPctChanged = delegate { };
+   //public event Action<float> OnHealthPctChanged = delegate { };
 
 
 
