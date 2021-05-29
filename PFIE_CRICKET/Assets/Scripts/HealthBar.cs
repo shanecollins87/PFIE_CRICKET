@@ -53,7 +53,7 @@ public class HealthBar : MonoBehaviour
         float maximumOffset = maximum - minimum;
         float fillAmount = currentOffset / maximumOffset;
         mask.fillAmount = fillAmount;
-<<<<<<< HEAD:PFIE_CRICKET/Assets/Scripts/HealthBar.cs
+
 
         fill.color = color; // set fill colour to bar colour
     }
@@ -63,8 +63,7 @@ public class HealthBar : MonoBehaviour
     {
         slider.maxValue = health;
         slider.value = health;   //slider starts at maximum health
-=======
->>>>>>> d7a59646e83f1dfd1e0cab27287ffa2a9173b98a:PFIE_CRICKET/2021_HDIP-PFIE-CA1-CRICKET/Assets/Scripts/HealthBar.cs
+
 
     }
 
