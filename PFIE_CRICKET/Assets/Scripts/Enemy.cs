@@ -4,9 +4,8 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public int health;
-    public Slider healthbar_E;
-    public int damage;
+    public int Enemyhealth;
+    public Slider healthbar;
     
     public int Health = 20;
 
@@ -15,19 +14,13 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Takedamage();
-            Takehit();
         }
 
     }
 
     public void Takedamage()
     {
-        health -= 5;
-    }
-
-    public void Takehit()
-    {
-        Health -= 10;
+        Enemyhealth -= 10;
     }
 
     private void Update ()
@@ -35,7 +28,7 @@ public class Enemy : MonoBehaviour
     {
         
         //healthbar.value = health;
-        Debug.Log(health);
+        Debug.Log(Enemyhealth);
     
     }
 

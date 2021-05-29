@@ -1,8 +1,9 @@
 # 2021---HDIP--PFIE---CA1---CRICKET
 
+Still working on Brackeys tutorials - up to ep 7 of 11.
 
-Working on lights. Had to take a  break from the coding as I wasn't getting anywhere.
-
+I don't plan on doing them all.
+_
 
 So I'm still not 100 percent certain my Github is working correctly so what i've started doing is saving my progress games as in the following format
 

@@ -8,9 +8,6 @@ using UnityEngine.UI;
 [SerializeField]
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;
-    public Gradient gradient;
-
     public int playerHealth = 100;
     public int damagePlayer = -25;
     public int minimum;
@@ -19,7 +16,6 @@ public class HealthBar : MonoBehaviour
     public Image mask;   // refs the Health Bar Mask
     public Image fill;   // refs the Health Bar Fill
     public Color color;  // refs the color
-    
 
     void Start()
     {
@@ -28,7 +24,7 @@ public class HealthBar : MonoBehaviour
 
    void OnCollisionEnter(Collision _collision) {
 
-        if (_collision.gameObject.tag == "Player") 
+        if (_collision.gameObject.tag == "Enemy") 
         {
             playerHealth -= damagePlayer;
         
@@ -54,21 +50,8 @@ public class HealthBar : MonoBehaviour
         float fillAmount = currentOffset / maximumOffset;
         mask.fillAmount = fillAmount;
 
-        fill.color = color; // set fill colour to bar colour
+        //fill.color = color; // set fill colour to bar colour
     }
 
-
-    public void SetMaxHealth(int health)
-    {
-        slider.maxValue = health;
-        slider.value = health;   //slider starts at maximum health
-
-    }
-
-    public void SetHealth(int health)
-    {
-
-        slider.value = health;
-    }
 
 }
