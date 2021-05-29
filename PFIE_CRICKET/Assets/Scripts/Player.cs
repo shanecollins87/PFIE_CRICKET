@@ -27,21 +27,21 @@ public class Player : MonoBehaviour
         PlayerPersistence.SaveData(this); // static class to make saving and loading simple
     }
 
-    private void Update()
-    {
+    //private void Update()
+    //{
 
-        PlayerData.Eggs = 1;
-        UpdateEggsUI();
+    //    //PlayerData.Eggs = 12;
+    //    //UpdateEggsUI();
 
    
-    }
+    //}
 
-    public void UpdateEggsUI()
-    {
+    //public void UpdateEggsUI()
+    //{
 
-        FindObjectOfType<Text>().text = "Total" + PlayerData.Eggs;
+    //    FindObjectOfType<Text>().text = "Total" + PlayerData.Eggs;
     
-    }
+    //}
 }
 
 

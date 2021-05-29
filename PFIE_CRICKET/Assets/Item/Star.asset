@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ba223a2de81b2f4ab66637280633291, type: 3}
-  m_Name: New Item
+  m_Name: Star
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Star
+  icon: {fileID: 21300000, guid: 335ae5fbdbfebee4284edf53802aec0b, type: 3}
   isDefaultItem: 0

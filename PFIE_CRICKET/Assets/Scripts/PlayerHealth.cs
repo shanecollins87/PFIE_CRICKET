@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public int takeDamage;
     public Image mask;
-    private float health;
+
 
     // Start is called before the first frame update
     void Start()
