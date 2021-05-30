@@ -20,7 +20,7 @@ public class MammyDoorTrigger : MonoBehaviour
         if (!isOpened) //! = false
         {
             isOpened = true; // this prevents the door going up and up basically it asks has the action been done if so you dont need to repeat
-            door2.transform.position += new Vector3(0, -10, 0); // the door moves up 8 in the yaxis (verticle only as this is all tahts required)
+            door2.transform.position += new Vector3(0, -1, 0); // the door moves up 8 in the yaxis (verticle only as this is all tahts required)
 
 
         }
