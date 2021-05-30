@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 // Ive set yup 3 pressure plates in my scene to move the door -5 each time allowing access to the teleporter into the internal room
+
 //https://youtu.be/6vj_Ie9i-Ak I watched this video for my door
 
 
-public class DoorTrigger : MonoBehaviour
+public class MammyDoorTrigger : MonoBehaviour
 {
     [SerializeField] // Visible in the Inspector
-    GameObject door;
+    GameObject door2;
 
     bool isOpened = false;
 
@@ -18,8 +20,8 @@ public class DoorTrigger : MonoBehaviour
         if (!isOpened) //! = false
         {
             isOpened = true; // this prevents the door going up and up basically it asks has the action been done if so you dont need to repeat
-            door.transform.position += new Vector3(0, -5, 0); // the door moves up 8 in the yaxis (verticle only as this is all tahts required)
-         
+            door2.transform.position += new Vector3(0, -10, 0); // the door moves up 8 in the yaxis (verticle only as this is all tahts required)
+
 
         }
     }

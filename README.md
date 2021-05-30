@@ -2,7 +2,6 @@
 
 
 
-V12.b-Commit
+V14 Commit
 
-I got the text prompt to work for the door, a collision with the player tagged as Player, turns on for 10 seconds a clue when the player approaches the door. 
-Added an internal room.
+The three Main character Frogs give clues on how to open the door. Each clue leads the player to pressure plate that reduces the door in the y axis allowing entry into interanal room
