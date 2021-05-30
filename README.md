@@ -4,4 +4,4 @@
 
 V14 Commit
 
-The three Main character Frogs give clues on how to open the door. Each clue leads the player to pressure plate that reduces the door in the y axis allowing entry into interanal room
+The three Main character Frogs give clues on how to open the door. Each clue leads the player to a pressure plate that reduces the door in the y axis allowing entry into interanal room
