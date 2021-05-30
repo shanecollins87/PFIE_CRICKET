@@ -5,11 +5,19 @@ using UnityEngine.UI;
 
 public class TextPrompts : MonoBehaviour
 {
-    public GameObject doorRiddle;
+    public GameObject textRiddle;
+    public GameObject textClue;
+    public GameObject bgImage;
+    public GameObject bgborder;
+
     // Start is called before the first frame update
     void Start()
     {
-        doorRiddle.SetActive(false);  // begins turned off
+        textRiddle.SetActive(false);  // begins with this Asset turned off
+        textClue.SetActive(false);  // begins with this Asset turned off
+        bgImage.SetActive(false);  // begins with this Asset turned off
+        bgborder.SetActive(false);  // begins with this Asset turned off
+
     }
 
     // Update is called once per frame
@@ -17,15 +25,22 @@ public class TextPrompts : MonoBehaviour
     {
         if (player.gameObject.tag == "Player")
         {
-            doorRiddle.SetActive(true);     // gets turned on
+            textRiddle.SetActive(true);     // gets turned on
+            textClue.SetActive(true);     // gets turned on
+            bgImage.SetActive(true);     // gets turned on
+            bgborder.SetActive(true);     // gets turned on
+
             StartCoroutine("WaitForSec");   // Coroutine allows IEnumerator to be called
         }
     }
     IEnumerator WaitForSec()  // allows us to use real time seconds to wait
     {
-        yield return new WaitForSeconds(40);    // Leaves it on screen for the duration given
-        Destroy(doorRiddle);                    //Removes doorRiddle Prompt
-        //Destroy(gameObject);
+        yield return new WaitForSeconds(10);    // Leaves it on screen for the duration given
+        Destroy(textRiddle);                    //Removes Text Prompt
+        Destroy(textClue);                      //Removes clue Prompt
+        Destroy(bgImage);                       //Removes the background Image
+        Destroy(bgborder);                      //Removes the border/ overlay Image
+
 
     }
 

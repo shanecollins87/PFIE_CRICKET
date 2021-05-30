@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 499a9fde80f678c448291e6e8b2c5a34
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/This is the game_preFirsrcommit.unity
     guid: 0dbd70117bcb39d4290310ce45fb31ab
+  - enabled: 1
+    path: Assets/Scenes/ReplayGame.unity
+    guid: e08a0a849bf142f479adc033fab425a8
   m_configObjects: {}
