@@ -36,10 +36,17 @@ public class TextPrompts : MonoBehaviour
     IEnumerator WaitForSec()  // allows us to use real time seconds to wait
     {
         yield return new WaitForSeconds(10);    // Leaves it on screen for the duration given
-        Destroy(textRiddle);                    //Removes Text Prompt
-        Destroy(textClue);                      //Removes clue Prompt
-        Destroy(bgImage);                       //Removes the background Image
-        Destroy(bgborder);                      //Removes the border/ overlay Image
+        textRiddle.SetActive(false);  // begins with this Asset turned off
+        textClue.SetActive(false);  // begins with this Asset turned off
+        bgImage.SetActive(false);  // begins with this Asset turned off
+        bgborder.SetActive(false);  // begins with this Asset turned off
+
+
+
+        //Destroy(textRiddle);                    //Removes Text Prompt
+        //Destroy(textClue);                      //Removes clue Prompt
+        //Destroy(bgImage);                       //Removes the background Image
+        //Destroy(bgborder);                      //Removes the border/ overlay Image
 
 
     }
